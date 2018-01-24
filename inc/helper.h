@@ -4,8 +4,8 @@ class Helper {
    * Helps in various ways
    */
   void help();
+};
 
-  void Helper::help() {
-  // do nothing
-  return;
+void Helper::help() {
+    return;
 }

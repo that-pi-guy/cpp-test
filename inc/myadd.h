@@ -5,7 +5,7 @@ class MyAdd {
    */
   int add(int a, int b);
 
-  int MyAdd::add(int a, int b) {
+  int add(int a, int b) {
   return a + b;
   }
 };
