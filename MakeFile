@@ -1,0 +1,10 @@
+all : firstapp
+
+firstapp : main.o
+	g++ main.o -o firstapp
+
+main.o : ~/Documents/C_Projects/demo_project/src/main.cpp
+	g++ -Wall -I/home/pi/Documents/C_Projects/demo_project/inc -c ~/Documents/C_Projects/demo_project/src/main.cpp
+
+clean :
+	rm firstapp main.o
