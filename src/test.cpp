@@ -3,22 +3,26 @@
 #include <iostream>
 using namespace std;
 #include <string>;
+#include "myadd.h"
 
 int main() {
   // declarations
   string mystring;
   int a, b;
-  int c;
+  int c(27);
 
   // assignment
-  c(27);
   a = 20;
   b = 27;
+
+  // implementation
   a = (a * 1023) / c;
-  int result = a / b;
+  //  int result = a / b;
+  MyAdd add_obj;
+  int result = add_obj.add(1, 1);
 
   // output
-  cout << "Value of a: " << a;
+  cout << "Value of c: " << c;
   if (a > b) {
     cout << "\nValue of result: " << result;
   }
