@@ -2,7 +2,7 @@
 // My first program in c++
 #include <iostream>
 using namespace std;
-#include <string>;
+#include <string>
 #include "myadd.h"
 
 const double pi = 3.142;
@@ -23,12 +23,16 @@ int main() {
   MyAdd add_obj;
   int result_b = add_obj.add(1, 1);
   int result_a = add_obj.add(9, 10);
-  
   // output
-  cout << "Value of c: " << c;
-  if (a > b) {
-    cout << "\nValue of result:\a " << result_a;
+  for (int i = 1; i <= b; ++i) {
+    cout << i << "\n";
   }
+
+
+  //  cout << "Value of c: " << c;
+  //  if (a > b) {
+  //  cout << "\nValue of result:\a " << result_a;
+  //  }
 
   return 0;
 }
