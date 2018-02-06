@@ -1,4 +1,6 @@
+//  Copyright Paul S 2018
 #include <iostream>
+#include <utility>
 #include <string>
 #include "coin.h"
 using namespace std;
@@ -12,6 +14,11 @@ int main() {
 
   Coin coin;
   string myguess;
+
+  pair <string, int> Coin_side1;
+  pair <string, int> Coin_side2;
+  Coin_side1 = make_pair(string("heads"), 1);
+  Coin_side2 = make_pair(string("tails"), 2);
 
   cout << "About to flip the coin, what is your guess? ";
   getline(cin, myguess);
