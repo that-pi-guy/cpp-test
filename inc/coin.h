@@ -19,24 +19,17 @@ class Coin {
   *   Creates a coin with two sides
   */
   //  pair <string, double> Coin_side1;
-  int flip(int iRepetition);
+  int flip();
   void sides(void);
 };
 
-int Coin::flip(int iRepetition) {
+int Coin::flip() {
   // Flips the coin n number of times //
   int myrand;
-  //  srand((unsigned)time(0));
-  //  int random_integer = rand();
-  //  return random_integer;
-  return 1;
-}
-
-void Coin::sides(void) {
-  //pair <string, int> Coin_side1;
-  //Coin_side1 = make_pair(string("heads"), 1);
-  //Coin_side2 = make_pair(string("tails"), 2);
-  return;
+  srand((unsigned)time(0));
+  int random_integer = rand() % 2 + 1;
+  return random_integer;
+  //  return 1;
 }
 
 #endif  //  INC_COIN_H_

@@ -14,6 +14,7 @@ int main() {
 
   Coin coin;
   string myguess;
+  string correctGuess = "Bad guess!";
 
   pair <string, int> Coin_side1;
   pair <string, int> Coin_side2;
@@ -23,14 +24,19 @@ int main() {
   cout << "About to flip the coin, what is your guess? ";
   getline(cin, myguess);
 
+  int result = coin.flip();
+
   if (myguess  == "heads") {
-    cout << Coin_side1.first << "\n";
+    if (result == Coin_side1.second) {
+      correctGuess = "Good guess!";
+    }
   } else if (myguess == "tails") {
-    cout << Coin_side2.first << "\n";
+    if (result == Coin_side2.second) {
+      correctGuess = "Good guess!";
+    }
   } else {
     cout << "Invalid guess";
   }
 
-  int result = coin.flip(1);
-  cout << result << "\n";
+  cout << correctGuess << "\n";
 }
