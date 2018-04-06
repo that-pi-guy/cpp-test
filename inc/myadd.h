@@ -10,7 +10,7 @@ class MyAdd {
   int add(int a, int b);
 };
 
-int MyAdd::add(int a, int b) {
+int MyAdd:src:add(int a, int b) {
   return a + b;
 }
 #endif  // INC_MYADD_H_

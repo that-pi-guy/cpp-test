@@ -1,4 +1,4 @@
-// Copyright Paul S 2018
+// Copyright 2018 Paul S
 #ifndef INC_COIN_H_
 #define INC_COIN_H_
 
